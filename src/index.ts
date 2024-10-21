@@ -9,7 +9,7 @@ const client = Twilio(accountSid, authToken);
 async function sendWhatsappMessage(req:Request,res:Response) {
   try {
     const message = await client.messages.create({
-      from: 'whatsapp:+5511961256474', // Número de WhatsApp do Twilio Sandbox
+      from: 'whatsapp:+14155238886', // Número de WhatsApp do Twilio Sandbox
       to: 'whatsapp:+5511994076414',  // Número do destinatário (com código do país)
       body: 'Te Amo vida, essa mensagem foi enviada pelo meu serviço de mensagem automatica.'
     });
