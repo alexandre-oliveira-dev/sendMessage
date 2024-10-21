@@ -1,7 +1,7 @@
 import Express, { Request, Response } from 'express';
 import Twilio from 'twilio';
 
-const app =  Express();
+ export const app =  Express();
 const accountSid = 'AC668782be34ce934fbcb6b8b93dc5da9e';
 const authToken = '5e37480cb82f2ef560aa9528074d6fc0';
 const client = Twilio(accountSid, authToken);
